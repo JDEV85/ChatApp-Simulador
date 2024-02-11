@@ -13,18 +13,31 @@
         
     </div>
 
+    <!-- Contendor de los formularios -->
     <div id="form-container">
+        
+        <!-- Formularaio para enviar mensajes -->
         <form id="msgForm">
-        <select name="" id="user-select">
-            <!-- <option value="Manuel">Manuel</option>
-            <option value="Valery">Valery</option> -->
-        </select>
-
-       
+        <select name="" id="user-select"></select>
         <textarea placeholder="Mensaje" id="texto" maxlength="400" cols="30" rows="10"></textarea>
-
         <button type="submit">Enviar</button>
         </form>
+
+        <!-- Formulario para agregar usuarios -->
+        <form id="addForm">
+            <input type="text" placeholder="Nombre" name="nombre">
+            <input type="text" placeholder="Apellido">
+            <input type="date">
+            <input type="number" placeholder="Altura en metros">
+            <input type="number" placeholder="Peso en kg">
+            <select name="" id="leng-select" ></select>
+            <select name="" id="nac-select" ></select>
+            <input type="text" placeholder="url de la imagen">
+            <button type="submit">Agregar</button>
+
+        </form>
+
+
 
     </div>
 </body>

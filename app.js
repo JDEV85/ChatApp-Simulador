@@ -44,11 +44,18 @@ const persona2 = new Persona
         "Español",
         "Dominicana",
         "./assets/carmen.jpeg"
+       
         )
 
 
 // Inserta las personas en la lista de quien escribe el mensaje
 fx.addPersonName();
+
+// Agrega lenguajes
+fx.addLeng();
+
+// Agrega nacionalidades
+fx.addNac();
 
 // Leer los datos del formulario y envia el mensaje
 const formulario = document.getElementById("msgForm");
@@ -68,9 +75,35 @@ formulario.addEventListener('submit', (event) => {
 
         }
     
-    }   
-            
+    }     
+    
+});
 
+
+// Leer formulario al agreagar persona
+const addForm = document.getElementById('addForm');
+addForm.addEventListener('submit',(event) =>{
+    event.preventDefault();
+    let personCount = Persona.personaObj.length; // Obtener numero de las instanciass de personas existentes
+    let val = [];
+
+    for (let i = 0; i < addForm.length; i++){
+        if(addForm[i].type != 'submit'){
+            // console.log(addForm[i].value);
+            val.push(addForm[i].value);
+        }
+    }
+
+    // Crear el nuevo usuario
+    new Persona(
+      ...val
+    );
+     
+    // Aactualizar la lista de personas
+    fx.addPersonName();
+    
+    
+    // console.log(val);
 
 });
 
