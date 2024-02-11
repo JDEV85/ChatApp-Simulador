@@ -43,7 +43,7 @@ const persona2 = new Persona
         "80 kg",
         "Español",
         "Dominicana",
-        "./assets/Carmen.jpeg"
+        "./assets/carmen.jpeg"
         )
 
 
