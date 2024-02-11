@@ -1,8 +1,8 @@
-import Carro from "./carro.js";
-import LLanta from "./llanta.js";
+import Carro from "./js/carro.js";
+import LLanta from "./js/llanta.js";
 // import {PersonaMsg} from "./persona.js";
-import Persona  from "./persona.js";
-import * as fx from './funciones.js';
+import Persona  from "./js/persona.js";
+import * as fx from './js/funciones.js';
 
 
 
@@ -18,7 +18,7 @@ const persona1 = new Persona
     "80 kg",
     "Español",
     "Dominicana",
-    "../assets/valery.jpeg"
+    "./assets/valery.jpeg"
     )
     
 
@@ -31,7 +31,7 @@ const persona2 = new Persona
     "91 kg",
     "Español",
     "Dominicana",
-    "../assets/Manuel.jpeg"
+    "./assets/Manuel.jpeg"
     )
 
     const persona3 = new Persona
@@ -43,7 +43,7 @@ const persona2 = new Persona
         "80 kg",
         "Español",
         "Dominicana",
-        "../assets/Carmen.jpeg"
+        "./assets/Carmen.jpeg"
         )
 
 
