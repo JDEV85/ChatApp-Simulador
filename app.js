@@ -26,7 +26,7 @@ const persona2 = new Persona
 (
     "Manuel",
     "Ortega",
-    "2010-08-06",
+    "2010-08-06",    
     "1.7 m",
     "91 kg",
     "Español",
