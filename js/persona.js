@@ -15,9 +15,7 @@ class Persona{
         this.nacionalidad = nacionalidad;
         this.pic = pic;
         this.txt = "";
-        // this.chatPlantilla = [
-            //     "chatp1", "chatp2"
-            // ];
+        this.nombreColor = this.colorNombreHSL(); // define un color aleatorio para el nombre en el chat
         Persona.conter ++; // Enumera las instancias creadas
         this.chatPlantilla = "chatp" + Persona.conter;
         Persona.personas.push(this.nombre); // Agrega los nombres de las personas creadas
@@ -59,6 +57,7 @@ class Persona{
         p1.innerHTML = `${this.txt}  ${dateTime}`;
         const p1Span = document.createElement("p");
         p1Span.classList.add("pName");
+        p1Span.style.color = this.nombreColor;
         p1Span.innerHTML = this.nombre;
         chatbox.append(p1);
         pContainer.append(img1, p1Span);
@@ -102,6 +101,15 @@ class Persona{
             this.enviarMsg(texto);
 
         }
+    }
+
+    // Elegir un color aleatorio para el nombre que se mostrara en el chat
+    colorNombreHSL(){
+        const h = Math.floor(Math.random() * 360 );
+        const s = Math.floor(Math.random() * 100 );
+        const l = Math.floor(Math.random() * 100 );
+        
+        return `hsl(${h}deg, ${s}%, ${l}%)`;
     }
 
 }

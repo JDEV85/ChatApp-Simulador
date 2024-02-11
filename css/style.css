@@ -4,8 +4,9 @@ body{
     background-color:cadetblue;
 }
 
+/* Ventana donde aparecen los mensajes del chat */
 #chat-window{
-    background-color: black;
+    background-color: 	#d5e1df;
     width: 50%;
     height: 100%;
     position: absolute;
@@ -40,7 +41,7 @@ body{
 }
 
 .chatp3{
-    background-color: rgb(168, 193, 220);
+    background-color: rgb(240, 249, 204);
     position:relative;
     width:fit-content; 
     max-width:80%;
