@@ -36,7 +36,7 @@ export function addLeng(){
 
     for (let i = 0; i < valores.length; i++){
         const opts = document.createElement('option');
-        leng.appendChild(opts).text = 'Español';
+        leng.appendChild(opts).text = valores[i];
     }
 }
 

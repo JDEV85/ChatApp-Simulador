@@ -25,14 +25,22 @@
 
         <!-- Formulario para agregar usuarios -->
         <form id="addForm">
-            <input type="text" placeholder="Nombre" required>
-            <input type="text" placeholder="Apellido" required>
-            <input type="date" required>
-            <input type="number" placeholder="Altura en metros" required>
-            <input type="number" placeholder="Peso en kg" required>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <label for="fecha">Fecha Nacimiento:</label>
+            <input type="date" id="fecha" required>
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" placeholder="Altura en metros" step="0.01" required>
+            <label for="peso">Peso:</label>
+            <input type="number" id="peso" placeholder="Peso en kg" step="0.01" required>
+            <label for="leng-select">Lenguaje:</label>
             <select name="" id="leng-select" ></select>
+            <label for="nac-select">Nacionalidad:</label>
             <select name="" id="nac-select" ></select>
-            <input type="text" placeholder="url de la imagen" required>
+            <label for="Imagen">Imaagen Perfil:</label>
+            <input type="text" id="imagen" placeholder="url de la imagen" required>
             <button type="submit">Agregar</button>
 
         </form>
